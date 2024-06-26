@@ -3,7 +3,7 @@ import './navbar.css'
 import logo from '../Assests/logo.png'
 import cartIcon from '../Assests/cart_icon.png'
 
-const navbar = () => {
+const Navbar = () => {
     const [menu,setMenu] = useState("shop");
     return (
         <div>
@@ -30,4 +30,4 @@ const navbar = () => {
     )
 }
 
-export default navbar
+export default Navbar
