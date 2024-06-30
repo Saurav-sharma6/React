@@ -2,7 +2,7 @@
     height: 86vh;
     background: linear-gradient(180deg,#fde1ff,#e1ffea22 60%);
     display: flex;
-    overflow-y:hidden;
+    /* overflow-y:hidden; */
 }
 .hero-left{
     flex: 1;
