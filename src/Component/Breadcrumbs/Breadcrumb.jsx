@@ -6,8 +6,8 @@ const Breadcrumb = (props) => {
     const {product} = props;
   return (
     <div className='Breadcrumb '>
-      HOME <img src={arrow_icon} alt="" /> SHOP <img src={arrow_icon} alt="" />{product.category}
-      <img src={arrow_icon} alt="" />{product.Name}
+      HOME <img src={arrow_icon} alt="" /> SHOP <img src={arrow_icon} alt="" />{product.category.toUpperCase()}<img src={arrow_icon} alt="" />{product.name}
+      
     </div>
   )
 }

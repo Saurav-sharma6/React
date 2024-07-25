@@ -43,6 +43,7 @@ let all_product = [
     image: p1_img,
     new_price: 50.0,
     old_price: 80.5,
+    description: "Elegant blouse featuring a striped pattern, flutter sleeves, and a flattering peplum hem. Perfect for both casual and semi-formal occasions."
   },
   {
     id: 2,
@@ -51,6 +52,7 @@ let all_product = [
     image: p2_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Chic and versatile blouse with a unique overlap collar design. The striped pattern adds a touch of sophistication to any outfit."
   },
   {
     id: 3,
@@ -59,6 +61,7 @@ let all_product = [
     image: p3_img,
     new_price: 60.0,
     old_price: 100.5,
+    description: "Stylish blouse with a comfortable fit and eye-catching striped design. The flutter sleeves add a feminine touch to this versatile piece."
   },
   {
     id: 4,
@@ -67,6 +70,7 @@ let all_product = [
     image: p4_img,
     new_price: 100.0,
     old_price: 150.0,
+    description: "Premium quality blouse featuring a unique collar design and peplum hem. The striped pattern offers a classic look with a modern twist."
   },
   {
     id: 5,
@@ -75,6 +79,7 @@ let all_product = [
     image: p5_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Fashionable blouse with flutter sleeves and a flattering silhouette. Perfect for creating a polished look for work or casual outings."
   },
   {
     id: 6,
@@ -83,6 +88,7 @@ let all_product = [
     image: p6_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Trendy blouse with a striking striped pattern and elegant overlap collar. The peplum hem adds a touch of flair to this stylish piece."
   },
   {
     id: 7,
@@ -91,6 +97,7 @@ let all_product = [
     image: p7_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Comfortable and chic blouse featuring flutter sleeves and a peplum hem. The striped design offers a timeless appeal for various occasions."
   },
   {
     id: 8,
@@ -99,6 +106,7 @@ let all_product = [
     image: p8_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Versatile blouse with a flattering fit and stylish details. The overlap collar and peplum hem create a sophisticated silhouette."
   },
   {
     id: 9,
@@ -107,6 +115,7 @@ let all_product = [
     image: p9_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Effortlessly elegant blouse with a unique striped pattern. The flutter sleeves and peplum hem add a touch of femininity to this classic design."
   },
   {
     id: 10,
@@ -115,6 +124,7 @@ let all_product = [
     image: p10_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Stylish and comfortable blouse perfect for any occasion. Features a flattering overlap collar and peplum hem for a polished look."
   },
   {
     id: 11,
@@ -123,6 +133,7 @@ let all_product = [
     image: p11_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Chic blouse with a modern striped pattern and flutter sleeves. The peplum hem creates a flattering silhouette for all body types."
   },
   {
     id: 12,
@@ -131,6 +142,7 @@ let all_product = [
     image: p12_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Trendy blouse featuring an overlap collar and peplum hem. The striped design adds a touch of sophistication to this versatile piece."
   },
   {
     id: 13,
@@ -139,6 +151,7 @@ let all_product = [
     image: p13_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Sleek and modern bomber jacket in a vibrant green color. Features a full-zip front and slim fit design for a stylish, contemporary look."
   },
   {
     id: 14,
@@ -147,6 +160,7 @@ let all_product = [
     image: p14_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Versatile bomber jacket in a rich green hue. The slim fit and full-zip design offer both style and functionality for everyday wear."
   },
   {
     id: 15,
@@ -155,6 +169,7 @@ let all_product = [
     image: p15_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Stylish green bomber jacket with a comfortable slim fit. Perfect for layering or as a standalone piece for a trendy casual look."
   },
   {
     id: 16,
@@ -163,6 +178,7 @@ let all_product = [
     image: p16_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Modern bomber jacket featuring a solid green color and sleek design. The full-zip closure and slim fit create a polished silhouette."
   },
   {
     id: 17,
@@ -171,6 +187,7 @@ let all_product = [
     image: p17_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Trendy green bomber jacket with a slim fit design. Ideal for adding a pop of color to any casual or smart-casual outfit."
   },
   {
     id: 18,
@@ -179,6 +196,7 @@ let all_product = [
     image: p18_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Stylish and comfortable bomber jacket in a vibrant green shade. The slim fit and zippered design offer a modern, streamlined look."
   },
   {
     id: 19,
@@ -187,6 +205,7 @@ let all_product = [
     image: p19_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Versatile green bomber jacket with a full-zip front. The slim fit design ensures a flattering silhouette for various body types."
   },
   {
     id: 20,
@@ -195,6 +214,7 @@ let all_product = [
     image: p20_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Sleek bomber jacket in a bold green color. Features a slim fit and full-zip closure for a contemporary and stylish appearance."
   },
   {
     id: 21,
@@ -203,6 +223,7 @@ let all_product = [
     image: p21_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Modern green bomber jacket with a slim fit design. Perfect for adding a trendy touch to both casual and semi-formal outfits."
   },
   {
     id: 22,
@@ -211,6 +232,7 @@ let all_product = [
     image: p22_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Stylish bomber jacket in a vibrant green hue. The slim fit and full-zip design offer a sleek and contemporary look for any occasion."
   },
   {
     id: 23,
@@ -219,6 +241,7 @@ let all_product = [
     image: p23_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Trendy green bomber jacket with a comfortable slim fit. Features a full-zip front for easy wear and a modern silhouette."
   },
   {
     id: 24,
@@ -227,6 +250,7 @@ let all_product = [
     image: p24_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Versatile bomber jacket in a rich green color. The slim fit design and zippered closure create a sleek and fashionable appearance."
   },
   {
     id: 25,
@@ -235,6 +259,7 @@ let all_product = [
     image: p25_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Comfortable and colorful hooded sweatshirt for boys. The orange colourblocked design adds a fun and energetic vibe to any casual outfit."
   },
   {
     id: 26,
@@ -243,6 +268,7 @@ let all_product = [
     image: p26_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Stylish hooded sweatshirt featuring a vibrant orange colourblocked pattern. Perfect for keeping boys warm and fashionable during cooler days."
   },
   {
     id: 27,
@@ -251,6 +277,7 @@ let all_product = [
     image: p27_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Trendy orange sweatshirt with a colourblocked design and comfortable hood. Ideal for active boys who love to stand out in style."
   },
   {
     id: 28,
@@ -259,6 +286,7 @@ let all_product = [
     image: p28_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Cozy hooded sweatshirt in a bright orange colourblocked pattern. Designed for both comfort and style, perfect for everyday wear."
   },
   {
     id: 29,
@@ -267,6 +295,7 @@ let all_product = [
     image: p29_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Fun and fashionable orange sweatshirt with a colourblocked design. Features a comfortable hood and durable fabric for active kids."
   },
   {
     id: 30,
@@ -275,6 +304,7 @@ let all_product = [
     image: p30_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Stylish hooded sweatshirt in a vibrant orange colourblocked pattern. Perfect for boys who love to express their personality through fashion."
   },
   {
     id: 31,
@@ -283,6 +313,7 @@ let all_product = [
     image: p31_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Comfortable orange sweatshirt with a trendy colourblocked design. The hood adds extra warmth and style for cool weather days."
   },
   {
     id: 32,
@@ -291,6 +322,7 @@ let all_product = [
     image: p32_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Eye-catching hooded sweatshirt featuring an orange colourblocked pattern. Designed for both comfort and durability for active boys."
   },
   {
     id: 33,
@@ -299,6 +331,7 @@ let all_product = [
     image: p33_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Stylish and cozy orange sweatshirt with a colourblocked design. The hood provides extra warmth and a trendy look for young fashion enthusiasts."
   },
   {
     id: 34,
@@ -307,6 +340,7 @@ let all_product = [
     image: p34_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Vibrant orange hooded sweatshirt with a fun colourblocked pattern. Perfect for boys who love to stand out with their unique style."
   },
   {
     id: 35,
@@ -315,6 +349,7 @@ let all_product = [
     image: p35_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Comfortable and trendy orange sweatshirt featuring a colourblocked design. The hood adds extra style and functionality for active kids."
   },
   {
     id: 36,
@@ -323,6 +358,7 @@ let all_product = [
     image: p36_img,
     new_price: 85.0,
     old_price: 120.5,
+    description: "Fashionable hooded sweatshirt in a bright orange colourblocke"
   },
 ];
 
