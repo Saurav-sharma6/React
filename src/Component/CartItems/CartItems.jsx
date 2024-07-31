@@ -22,13 +22,13 @@ const CartItems = () => {
                 if (cartItems[e.id] > 0) {
                     return (
                         <div key={e.id}>
-                            <div className="cartitems-format">
+                            <div className="cartitems-format cartitems-format-main">
                                 <img className="carticon-product-icon" src={e.image} alt={e.name} />
                                 <p>{e.name}</p>
                                 <p>${e.new_price}</p>
                                 <button className='cartitems-quantity'>{cartItems[e.id]}</button>
                                 <p>${e.new_price * cartItems[e.id]}</p>
-                                <img src={remove_icon} onClick={() => removeFromCart(e.id)} alt="Remove" />
+                                <img className='cartitems-remove-icon' src={remove_icon} onClick={() => removeFromCart(e.id)} alt="Remove" />
                             </div>
                             <hr />
                         </div>
@@ -37,6 +37,41 @@ const CartItems = () => {
                     return null;
                 }
             })}
+            <div className="cartitems-down">
+                <div className="cartitems-total">
+                    <h1>Cart Totals</h1>
+                    <div>
+                        <div className="cartitems-total-item">
+                            <p>Subtotal</p>
+                            <p>${0}</p>
+                        </div>
+                        <hr />
+                        <div className="cartitems-total-item">
+                            <p>Shipping Fee</p>
+                            <p>Free</p>
+                        </div>
+
+                        <hr />
+                        
+                        <div className="cartitems-total-item">
+                            <h3>Total</h3>
+                             <h3>${0}</h3>
+
+                        </div>
+                        <button>Proceed to checkout</button>
+
+                    </div>
+
+                    <div className="cartitems-promocode">
+                        <p>If you have a promocode , Enter it here</p>
+                        <div className="cartitems-promocode">
+                            <input type="text" placeholder='Promo code' />
+                            <button>Submit</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     );
 }
