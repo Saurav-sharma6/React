@@ -3,6 +3,7 @@ import './navbar.css'
 import logo from '../Assests/logo.png'
 import cartIcon from '../Assests/cart_icon.png'
 import { Link } from 'react-router-dom';
+import { ShopContext } from "../../Context/ShopContext";
 
 const Navbar = () => {
     const [menu,setMenu] = useState("shop");
