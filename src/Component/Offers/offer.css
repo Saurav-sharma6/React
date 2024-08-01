@@ -1,46 +1,107 @@
-.offer{
-    width: 65%;
-    height: 60vh;
+.offer {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 60vh;
     display: flex;
+    flex-wrap: wrap;
     margin: auto;
-    padding:0px 140px ;
-    background:linear-gradient(180deg,#fde1ff 0%,#e1ffea22 60%);
+    padding: 20px;
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
 }
-.offer-left{
+
+.offer-left {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    min-width: 300px;
+    padding: 20px;
 }
-.offer-left h1{
+
+.offer-left h1 {
     color: #171717;
-    font-size: 80px;
+    font-size: clamp(40px, 6vw, 80px);
     font-weight: 600;
 }
-.offer-left p{
-    color:#171717;
-    font-size: 22px;
+
+.offer-left p {
+    color: #171717;
+    font-size: clamp(16px, 2.5vw, 22px);
     font-weight: 600;
 }
-.offer-left button{
-    width: 282px;
+
+.offer-left button {
+    width: 100%;
+    max-width: 282px;
     height: 70px;
     border-radius: 35px;
     background-color: #ff4141;
     border: none;
     color: white;
-    font-size: 22px;
+    font-size: clamp(16px, 2.5vw, 22px);
     font-weight: 500;
-    cursor: pointer ;
+    cursor: pointer;
     margin-top: 30px;
-
 }
-.offer-right{
+
+.offer-right {
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 100px;
+    padding-top: 20px;
+    min-width: 300px;
 }
 
+@media (max-width: 1024px) {
+    .offer {
+        padding: 15px;
+    }
 
+    .offer-left h1 {
+        font-size: clamp(36px, 5vw, 70px);
+    }
+
+    .offer-left p {
+        font-size: clamp(14px, 2vw, 20px);
+    }
+
+    .offer-left button {
+        height: 60px;
+        font-size: clamp(14px, 2vw, 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .offer {
+        flex-direction: column;
+    }
+
+    .offer-left, .offer-right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .offer-left button {
+        margin: 30px auto 0;
+    }
+
+    .offer-right {
+        padding-top: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .offer-left h1 {
+        font-size: clamp(32px, 4vw, 60px);
+    }
+
+    .offer-left p {
+        font-size: clamp(14px, 1.8vw, 18px);
+    }
+
+    .offer-left button {
+        height: 50px;
+        font-size: clamp(14px, 1.8vw, 18px);
+    }
+}
