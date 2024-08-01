@@ -98,11 +98,13 @@
     height: 50px;
 }
 
-.cartitems-promocode button{
+.cartitems-promocode  button{
     width: 170px;
     height: 58px;
     font-size: 16px;
     background: black;
     color: white;
     cursor: pointer;
+    /* padding-left: 100px; */
 }
+
