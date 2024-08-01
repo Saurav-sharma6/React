@@ -82,9 +82,12 @@
 .cartitems-promocode{
     width: 504px;
     margin-top:15px ;
+    gap: 100px;
     padding-left: 20px;
     height: 58px;
     background: #eaeaea;
+    /* gap: 100px; */
+    padding-block: 20px;
 }
 .cartitems-promocode input{
     border: none;
