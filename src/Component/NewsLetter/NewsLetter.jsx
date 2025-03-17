@@ -1,16 +1,16 @@
+// NewsLetter.jsx
 import React from 'react'
 import './NewsLetter.css'
 
 const NewsLetter = () => {
   return (
     <div className='newsletter'>
-        <h1>Get Exclusive offers on your Email</h1>
-        <p>Subscribe to our NewsLetter</p>
-        <div>
-            <input type="email" placeholder='Your Email Id' />
-            <button>Subscribe</button>
-        </div>
-      
+      <h1>Get Exclusive Offers on Your Email</h1>
+      <p>Subscribe to our Newsletter</p>
+      <div className="newsletter-input">
+        <input type="email" placeholder='Your Email Id' />
+        <button>Subscribe</button>
+      </div>
     </div>
   )
 }

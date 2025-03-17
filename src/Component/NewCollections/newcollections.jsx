@@ -1,29 +1,28 @@
+// NewCollections.jsx
 import React from "react";
 import "./newcollections.css";
-import NewCollections from "../Assests/new_collections";
+import NewCollectionsData from "../Assests/new_collections";
 import Item from "../Item/item";
 
-const newcollections = () => {
+const NewCollections = () => {
   return (
     <div className="new-collections">
       <h1>New Collections</h1>
       <hr />
       <div className="collections">
-        {NewCollections.map((item, i) => {
-          return (
-            <Item
-              key={i}
-              id={item.id}
-              name={item.name}
-              image={item.image}
-              new_price={item.new_price}
-              old_price={item.old_price}
-            />
-          );
-        })}
+        {NewCollectionsData.map((item, i) => (
+          <Item
+            key={i}
+            id={item.id}
+            name={item.name}
+            image={item.image}
+            new_price={item.new_price}
+            old_price={item.old_price}
+          />
+        ))}
       </div>
     </div>
   );
 };
 
-export default newcollections;
+export default NewCollections;

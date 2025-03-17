@@ -1,61 +1,98 @@
-.hero{
-    height: 86vh;
-    background: linear-gradient(180deg,#fde1ff,#e1ffea22 60%);
+/* hero.css */
+.hero {
+    min-height: 86vh;
+    background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
     display: flex;
-    /* overflow-y:hidden; */
-}
-.hero-left{
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .hero-left {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-    padding-left: 180px;
-    line-height: 1.1;
-}
-.hero-left h2{
+    padding: 0 20px;
+    min-width: 300px;
+  }
+  
+  .hero-left h2 {
     color: #090909;
-    font-size: 26px;
+    font-size: clamp(20px, 4vw, 26px);
     font-weight: 600;
-}
-.hero-left p{
-    color:#171717 ;
-    font-size: 30px;
+  }
+  
+  .hero-title p {
+    color: #171717;
+    font-size: clamp(24px, 5vw, 30px);
     font-weight: 700;
-}
-
-.hero-hand-icon{
+    line-height: 1.2;
+  }
+  
+  .hero-hand-icon {
     display: flex;
     align-items: center;
     gap: 20px;
-}
-
-.hero-hand-icon img{
-    width: 105px;
-}
-.hero-latest-btn{
+  }
+  
+  .hero-hand-icon img {
+    width: clamp(60px, 15vw, 105px);
+  }
+  
+  .hero-latest-btn {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 15px;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     height: 70px;
     border-radius: 75px;
     margin-top: 30px;
-    background-color:#ff4141 ;
+    background-color: #ff4141;
     color: white;
-    font-size: 22px;
-    font-weight: 100px;
+    font-size: clamp(18px, 4vw, 22px);
+    font-weight: 500;
     cursor: pointer;
-}
-
-.hero-right img{
+  }
+  
+  .hero-latest-btn img {
+    width: 20px;
+  }
+  
+  .hero-right {
     flex: 1;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    min-width: 300px;
+  }
+  
+  .hero-right img {
+    max-width: 100%;
     max-height: 550px;
-    padding-right: 150px;
-
-}
+    object-fit: contain;
+  }
+  
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-left {
+      padding: 0;
+      align-items: center;
+    }
+  
+    .hero-hand-icon {
+      justify-content: center;
+    }
+  
+    .hero-right {
+      margin-top: 40px;
+    }
+  }
+  

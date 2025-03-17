@@ -1,3 +1,4 @@
+// ShopCategory.jsx
 import React, { useContext } from "react";
 import "./Css/ShopCategory.css";
 import { ShopContext } from "../Context/ShopContext";
@@ -8,13 +9,13 @@ const ShopCategory = (props) => {
   const { all_product } = useContext(ShopContext);
   return (
     <div className="shop-category">
-      <img className="shopcategory-banner" src={props.banner} alt="" />
+      <img className="shopcategory-banner" src={props.banner} alt="Category Banner" />
       <div className="shopcategory-indexSort">
         <p>
           <span>Showing 1-12</span> out of 36 products
         </p>
         <div className="shopcategory-sort">
-          Sort By <img src={dropdown_icon} alt="" />0
+          Sort By <img src={dropdown_icon} alt="Dropdown Icon" />
         </div>
       </div>
       <div className="shopcategory-products">
@@ -37,7 +38,6 @@ const ShopCategory = (props) => {
       </div>
       <div className="shopcategory-loadmore">
         Explore More
-
       </div>
     </div>
   );

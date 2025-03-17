@@ -1,10 +1,48 @@
-.Breadcrumb{
-    display : flex;
+/* Breadcrumb.css */
+.breadcrumb {
+    display: flex;
     align-items: center;
-    gap: 8px;
-    color: #5e5e5e;
+    flex-wrap: wrap;
+    gap: 10px;
     font-size: 16px;
+    color: #5e5e5e;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.breadcrumb span {
+    font-size: clamp(12px, 2.5vw, 16px);
+}
+
+.breadcrumb img {
+    width: clamp(10px, 2vw, 14px);
+    height: auto;
+}
+
+.breadcrumb .current {
+    color: #171717;
     font-weight: 600;
-    margin: 10px 50px;
-    text-transform: capitalize;
+}
+
+@media (max-width: 768px) {
+    .breadcrumb {
+        padding: 15px;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .breadcrumb {
+        padding: 10px;
+        gap: 6px;
+    }
+    
+    .breadcrumb span {
+        font-size: clamp(10px, 2vw, 14px);
+    }
+    
+    .breadcrumb img {
+        width: clamp(8px, 1.5vw, 12px);
+    }
 }
