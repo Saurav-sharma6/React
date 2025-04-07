@@ -8,6 +8,10 @@
     background: #f5f5f5;
 }
 
+.footerimg{
+    border-radius: 10px;
+}
+
 .footer-logo {
     display: flex;
     align-items: center;

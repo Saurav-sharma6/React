@@ -34,331 +34,347 @@ import p33_img from "./product_33.png";
 import p34_img from "./product_34.png";
 import p35_img from "./product_35.png";
 import p36_img from "./product_36.png";
+import d1_img from "./dashcam1.jpg";
+import d2_img from "./dashcam2.jpg";
+import d3_img from "./dashcam3.jpg";
+import d4_img from "./dashcam4.jpg";
+import d5_img from "./dashcam5.jpg";
+import d6_img from "./dashcam6.jpg";
+import d7_img from "./dashcam7.jpg";
+import d8_img from "./dashcam1.jpg";
+import d9_img from "./dashcam2.jpg";
+import d10_img from "./dashcam3.jpg";
+import d11_img from "./dashcam4.jpg";
+import d12_img from "./dashcam5.jpg";
+
+
 
 let all_product = [
   {
     id: 1,
-    name: "4K Ultra HD Dashcam with Night Vision",
-    category: "dashcam",
-    image: p1_img,
-    new_price: 149.99,
-    old_price: 199.99,
-    description: "Crystal-clear 4K resolution and infrared night vision for 24/7 road safety."
+    name: "4K Ultra HD Dashcam with WiFi",
+    category: "women",
+    image: d12_img,
+    new_price: 129.99,
+    old_price: 179.99,
+    description: "Capture every detail on the road with this compact 4K dashcam featuring built-in WiFi for quick file transfers."
   },
   {
     id: 2,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "4K Ultra HD Dashcam with WiFi",
     category: "women",
-    image: p2_img,
-    new_price: 85.0,
-    old_price: 120.5,
-    description: "Chic and versatile blouse with a unique overlap collar design. The striped pattern adds a touch of sophistication to any outfit."
+    image: d1_img,
+    new_price: 129.99,
+    old_price: 179.99,
+    description: "Capture every detail on the road with this compact 4K dashcam featuring built-in WiFi for quick file transfers."
   },
   {
     id: 3,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Dual Lens Night Vision Dashcam",
     category: "women",
-    image: p3_img,
-    new_price: 60.0,
-    old_price: 100.5,
-    description: "Stylish blouse with a comfortable fit and eye-catching striped design. The flutter sleeves add a feminine touch to this versatile piece."
+    image: d5_img,
+    new_price: 109.99,
+    old_price: 149.99,
+    description: "Front and rear coverage with excellent night vision ensures safety during both day and night drives."
   },
   {
     id: 4,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Touchscreen Dashcam with GPS",
     category: "women",
-    image: p4_img,
-    new_price: 100.0,
-    old_price: 150.0,
-    description: "Premium quality blouse featuring a unique collar design and peplum hem. The striped pattern offers a classic look with a modern twist."
+    image: d5_img,
+    new_price: 139.99,
+    old_price: 189.99,
+    description: "Track your routes and record in crystal-clear HD with this user-friendly touchscreen dashcam."
   },
   {
     id: 5,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Dashcam with Parking Mode & Motion Detection",
     category: "women",
-    image: p5_img,
-    new_price: 85.0,
-    old_price: 120.5,
-    description: "Fashionable blouse with flutter sleeves and a flattering silhouette. Perfect for creating a polished look for work or casual outings."
+    image: d4_img,
+    new_price: 119.99,
+    old_price: 169.99,
+    description: "Protect your car even while parked with motion detection and 24-hour parking surveillance."
   },
   {
     id: 6,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "1080p Mini Dashcam with Loop Recording",
     category: "women",
-    image: p6_img,
-    new_price: 85.0,
-    old_price: 120.5,
-    description: "Trendy blouse with a striking striped pattern and elegant overlap collar. The peplum hem adds a touch of flair to this stylish piece."
+    image: d5_img,
+    new_price: 89.99,
+    old_price: 129.99,
+    description: "Compact and efficient, this 1080p dashcam features seamless loop recording and wide-angle capture."
   },
   {
     id: 7,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Dashcam with Sony Sensor & Wide Dynamic Range",
     category: "women",
-    image: p7_img,
-    new_price: 85.0,
-    old_price: 120.5,
-    description: "Comfortable and chic blouse featuring flutter sleeves and a peplum hem. The striped design offers a timeless appeal for various occasions."
+    image: d6_img,
+    new_price: 134.99,
+    old_price: 179.99,
+    description: "High-quality video capture in all lighting conditions thanks to advanced Sony sensor technology."
   },
   {
     id: 8,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "WiFi Dashcam with Voice Control",
     category: "women",
-    image: p8_img,
-    new_price: 85.0,
-    old_price: 120.5,
-    description: "Versatile blouse with a flattering fit and stylish details. The overlap collar and peplum hem create a sophisticated silhouette."
+    image: d7_img,
+    new_price: 149.99,
+    old_price: 199.99,
+    description: "Enjoy hands-free operation and live video sharing with built-in WiFi and voice command support."
   },
   {
     id: 9,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Rear View Mirror Dashcam with Backup Camera",
     category: "women",
-    image: p9_img,
-    new_price: 85.0,
-    old_price: 120.5,
-    description: "Effortlessly elegant blouse with a unique striped pattern. The flutter sleeves and peplum hem add a touch of femininity to this classic design."
+    image: d6_img,
+    new_price: 159.99,
+    old_price: 209.99,
+    description: "Integrates seamlessly into your rearview mirror and includes a rear camera for parking assistance."
   },
   {
     id: 10,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Dashcam with 360-Degree View",
     category: "women",
-    image: p10_img,
-    new_price: 85.0,
-    old_price: 120.5,
-    description: "Stylish and comfortable blouse perfect for any occasion. Features a flattering overlap collar and peplum hem for a polished look."
+    image: d9_img,
+    new_price: 189.99,
+    old_price: 239.99,
+    description: "Get complete road coverage with a 360-degree lens and intelligent image stitching."
   },
   {
     id: 11,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Stealth Dashcam with Emergency Lock",
     category: "women",
-    image: p11_img,
-    new_price: 85.0,
-    old_price: 120.5,
-    description: "Chic blouse with a modern striped pattern and flutter sleeves. The peplum hem creates a flattering silhouette for all body types."
+    image: d10_img,
+    new_price: 99.99,
+    old_price: 149.99,
+    description: "Discreet design with G-sensor technology to lock crucial footage during collisions automatically."
   },
   {
     id: 12,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Cloud-Connected Smart Dashcam",
     category: "women",
-    image: p12_img,
-    new_price: 85.0,
-    old_price: 120.5,
-    description: "Trendy blouse featuring an overlap collar and peplum hem. The striped design adds a touch of sophistication to this versatile piece."
+    image: d11_img,
+    new_price: 179.99,
+    old_price: 229.99,
+    description: "Automatically uploads footage to the cloud and supports app-based controls for remote access."
   },
+
   {
     id: 13,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    name: "Ultra HD 4K Dashcam with Night Vision",
     category: "men",
-    image: p13_img,
-    new_price: 85.0,
-    old_price: 120.5,
-    description: "Sleek and modern bomber jacket in a vibrant green color. Features a full-zip front and slim fit design for a stylish, contemporary look."
+    image: d11_img,
+    new_price: 50.99,
+    old_price: 179.99,
+    description: "Capture crystal-clear footage day and night with 4K resolution and advanced night vision."
   },
   {
     id: 14,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    name: "Dual Lens Dashcam with Rear Camera",
     category: "men",
-    image: p14_img,
-    new_price: 85.0,
-    old_price: 120.5,
-    description: "Versatile bomber jacket in a rich green hue. The slim fit and full-zip design offer both style and functionality for everyday wear."
+    image: d11_img,
+    new_price: 45.99,
+    old_price: 149.99,
+    description: "Record front and rear views simultaneously with this dual lens setup and wide angle coverage."
   },
   {
     id: 15,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    name: "Wi-Fi Enabled Smart Dashcam",
     category: "men",
-    image: p15_img,
-    new_price: 85.0,
-    old_price: 120.5,
-    description: "Stylish green bomber jacket with a comfortable slim fit. Perfect for layering or as a standalone piece for a trendy casual look."
+    image: d10_img,
+    new_price: 78.99,
+    old_price: 169.99,
+    description: "Connect easily to your phone to review footage or stream live video using built-in Wi-Fi."
   },
   {
     id: 16,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    name: "Mini Stealth Dashcam with Motion Detection",
     category: "men",
-    image: p16_img,
-    new_price: 85.0,
-    old_price: 120.5,
-    description: "Modern bomber jacket featuring a solid green color and sleek design. The full-zip closure and slim fit create a polished silhouette."
+    image: d9_img,
+    new_price: 80.99,
+    old_price: 129.99,
+    description: "Discreet and compact, this dashcam features motion-triggered recording and loop functionality."
   },
   {
     id: 17,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    name: "Wide-Angle Dashcam with G-Sensor",
     category: "men",
-    image: p17_img,
-    new_price: 85.0,
-    old_price: 120.5,
-    description: "Trendy green bomber jacket with a slim fit design. Ideal for adding a pop of color to any casual or smart-casual outfit."
+    image: d8_img,
+    new_price: 85.99,
+    old_price: 139.99,
+    description: "Equipped with a G-sensor for automatic incident detection and 170° wide-angle coverage."
   },
   {
     id: 18,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    name: "4K Dashcam with Parking Monitor",
     category: "men",
-    image: p18_img,
-    new_price: 85.0,
-    old_price: 120.5,
-    description: "Stylish and comfortable bomber jacket in a vibrant green shade. The slim fit and zippered design offer a modern, streamlined look."
+    image: d7_img,
+    new_price: 90.99,
+    old_price: 189.99,
+    description: "Monitors your vehicle while parked and records ultra-clear 4K video with HDR technology."
   },
   {
     id: 19,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    name: "1080p Dashcam with GPS Tracking",
     category: "men",
-    image: p19_img,
-    new_price: 85.0,
-    old_price: 120.5,
-    description: "Versatile green bomber jacket with a full-zip front. The slim fit design ensures a flattering silhouette for various body types."
+    image: d8_img,
+    new_price: 94.99,
+    old_price: 134.99,
+    description: "Log your speed and route with integrated GPS and Full HD 1080p recording capabilities."
   },
   {
     id: 20,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    name: "Smart Dashcam with Voice Alerts",
     category: "men",
-    image: p20_img,
-    new_price: 85.0,
-    old_price: 120.5,
-    description: "Sleek bomber jacket in a bold green color. Features a slim fit and full-zip closure for a contemporary and stylish appearance."
+    image: d5_img,
+    new_price: 78.99,
+    old_price: 174.99,
+    description: "Receive real-time driving assistance with voice alerts and lane departure warnings."
   },
   {
     id: 21,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    name: "360° Dashcam with Interior Camera",
     category: "men",
-    image: p21_img,
-    new_price: 85.0,
-    old_price: 120.5,
-    description: "Modern green bomber jacket with a slim fit design. Perfect for adding a trendy touch to both casual and semi-formal outfits."
+    image: d4_img,
+    new_price: 70.99,
+    old_price: 209.99,
+    description: "Complete 360° view with in-car cabin lens—perfect for rideshare drivers and taxis."
   },
   {
     id: 22,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    name: "Touchscreen Dashcam with Cloud Backup",
     category: "men",
-    image: p22_img,
-    new_price: 85.0,
-    old_price: 120.5,
-    description: "Stylish bomber jacket in a vibrant green hue. The slim fit and full-zip design offer a sleek and contemporary look for any occasion."
+    image: d6_img,
+    new_price: 70.99,
+    old_price: 199.99,
+    description: "Intuitive touchscreen operation and cloud video storage for secure backups."
   },
   {
     id: 23,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    name: "Dashcam with Emergency SOS & Auto Upload",
     category: "men",
-    image: p23_img,
-    new_price: 85.0,
-    old_price: 120.5,
-    description: "Trendy green bomber jacket with a comfortable slim fit. Features a full-zip front for easy wear and a modern silhouette."
+    image: d4_img,
+    new_price: 45.99,
+    old_price: 169.99,
+    description: "Automatically uploads critical footage after impact and sends out emergency SOS alerts."
   },
   {
     id: 24,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    name: "Weatherproof Dashcam for All Seasons",
     category: "men",
-    image: p24_img,
-    new_price: 85.0,
-    old_price: 120.5,
-    description: "Versatile bomber jacket in a rich green color. The slim fit design and zippered closure create a sleek and fashionable appearance."
+    image: d6_img,
+    new_price: 85.99,
+    old_price: 184.99,
+    description: "Built to withstand extreme weather conditions with IP68 waterproof housing and rugged design."
   },
+  
   {
     id: 25,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "Mini Dashcam with G-Sensor",
     category: "kid",
-    image: p25_img,
-    new_price: 85.0,
-    old_price: 120.5,
-    description: "Comfortable and colorful hooded sweatshirt for boys. The orange colourblocked design adds a fun and energetic vibe to any casual outfit."
+    image: d3_img,
+    new_price: 99.99,
+    old_price: 139.99,
+    description: "Compact dashcam featuring a built-in G-sensor for emergency video lock and continuous loop recording."
   },
   {
     id: 26,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "Dashcam with Infrared Night Vision",
     category: "kid",
-    image: p26_img,
-    new_price: 85.0,
-    old_price: 120.5,
-    description: "Stylish hooded sweatshirt featuring a vibrant orange colourblocked pattern. Perfect for keeping boys warm and fashionable during cooler days."
+    image: d6_img,
+    new_price: 119.99,
+    old_price: 159.99,
+    description: "Drive safely at night with this dashcam’s advanced infrared night vision and full HD video capture."
   },
   {
     id: 27,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "1080p Dashcam with Motion Detection",
     category: "kid",
-    image: p27_img,
-    new_price: 85.0,
-    old_price: 120.5,
-    description: "Trendy orange sweatshirt with a colourblocked design and comfortable hood. Ideal for active boys who love to stand out in style."
+    image: d4_img,
+    new_price: 89.99,
+    old_price: 129.99,
+    description: "Smart motion detection triggers instant recording to capture any suspicious activity around your vehicle."
   },
   {
     id: 28,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "Rear Camera Dashcam with Waterproof Lens",
     category: "kid",
-    image: p28_img,
-    new_price: 85.0,
-    old_price: 120.5,
-    description: "Cozy hooded sweatshirt in a bright orange colourblocked pattern. Designed for both comfort and style, perfect for everyday wear."
+    image: d9_img,
+    new_price: 109.99,
+    old_price: 149.99,
+    description: "Equipped with a waterproof rear camera, this dashcam ensures visibility and recording even in rainy conditions."
   },
   {
     id: 29,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "Wide Angle Dashcam with Loop Recording",
     category: "kid",
-    image: p29_img,
-    new_price: 85.0,
-    old_price: 120.5,
-    description: "Fun and fashionable orange sweatshirt with a colourblocked design. Features a comfortable hood and durable fabric for active kids."
+    image: d2_img,
+    new_price: 95.99,
+    old_price: 135.99,
+    description: "Record the full road ahead with a wide 170° lens and automatic loop recording to never miss a moment."
   },
   {
     id: 30,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "Stealth Design Dashcam with 2K Video",
     category: "kid",
-    image: p30_img,
-    new_price: 85.0,
-    old_price: 120.5,
-    description: "Stylish hooded sweatshirt in a vibrant orange colourblocked pattern. Perfect for boys who love to express their personality through fashion."
+    image: d7_img,
+    new_price: 129.99,
+    old_price: 169.99,
+    description: "A sleek, low-profile dashcam that delivers high-resolution 2K footage with discreet installation."
   },
   {
     id: 31,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "Voice-Controlled Smart Dashcam",
     category: "kid",
-    image: p31_img,
-    new_price: 85.0,
-    old_price: 120.5,
-    description: "Comfortable orange sweatshirt with a trendy colourblocked design. The hood adds extra warmth and style for cool weather days."
+    image: d11_img,
+    new_price: 149.99,
+    old_price: 199.99,
+    description: "Go hands-free with voice commands and smart features like GPS logging and cloud backup."
   },
   {
     id: 32,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "Dashcam with AI Collision Alerts",
     category: "kid",
-    image: p32_img,
-    new_price: 85.0,
-    old_price: 120.5,
-    description: "Eye-catching hooded sweatshirt featuring an orange colourblocked pattern. Designed for both comfort and durability for active boys."
+    image: d8_img,
+    new_price: 139.99,
+    old_price: 189.99,
+    description: "Advanced AI technology delivers real-time collision warnings and alerts to ensure a safer drive."
   },
   {
     id: 33,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "Dashcam with Emergency Recording Mode",
     category: "kid",
-    image: p33_img,
-    new_price: 85.0,
-    old_price: 120.5,
-    description: "Stylish and cozy orange sweatshirt with a colourblocked design. The hood provides extra warmth and a trendy look for young fashion enthusiasts."
+    image: d10_img,
+    new_price: 99.99,
+    old_price: 139.99,
+    description: "Automatically triggers emergency recording during sudden impacts or sharp turns, preserving key footage."
   },
   {
     id: 34,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "Cloud-Enabled Dashcam with App Sync",
     category: "kid",
-    image: p34_img,
-    new_price: 85.0,
-    old_price: 120.5,
-    description: "Vibrant orange hooded sweatshirt with a fun colourblocked pattern. Perfect for boys who love to stand out with their unique style."
+    image: d5_img,
+    new_price: 159.99,
+    old_price: 209.99,
+    description: "Access footage anytime from your phone with app-based control and cloud storage capabilities."
   },
   {
     id: 35,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "Dual Dashcam Set for Front and Rear Recording",
     category: "kid",
-    image: p35_img,
-    new_price: 85.0,
-    old_price: 120.5,
-    description: "Comfortable and trendy orange sweatshirt featuring a colourblocked design. The hood adds extra style and functionality for active kids."
+    image: d12_img,
+    new_price: 179.99,
+    old_price: 229.99,
+    description: "Record both front and rear perspectives in full HD with this dual-camera dashcam set."
   },
   {
     id: 36,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "Dashcam with Lane Departure Warning System",
     category: "kid",
-    image: p36_img,
-    new_price: 85.0,
-    old_price: 120.5,
-    description: "Fashionable hooded sweatshirt in a bright orange colourblocke"
+    image: d1_img,
+    new_price: 149.99,
+    old_price: 199.99,
+    description: "Stay safe with integrated lane departure alerts and crisp 1080p video capture in all conditions."
   },
 ];
 
