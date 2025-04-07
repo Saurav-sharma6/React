@@ -1,4 +1,4 @@
-import p1_img from "./product_1.png";
+import p1_img from "./dashcam1.jpg";
 import p2_img from "./product_2.png";
 import p3_img from "./product_3.png";
 import p4_img from "./product_4.png";
@@ -38,12 +38,12 @@ import p36_img from "./product_36.png";
 let all_product = [
   {
     id: 1,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    category: "women",
+    name: "4K Ultra HD Dashcam with Night Vision",
+    category: "dashcam",
     image: p1_img,
-    new_price: 50.0,
-    old_price: 80.5,
-    description: "Elegant blouse featuring a striped pattern, flutter sleeves, and a flattering peplum hem. Perfect for both casual and semi-formal occasions."
+    new_price: 149.99,
+    old_price: 199.99,
+    description: "Crystal-clear 4K resolution and infrared night vision for 24/7 road safety."
   },
   {
     id: 2,

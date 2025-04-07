@@ -13,6 +13,11 @@
     gap: 1.5rem;
     text-align: center;
 }
+.btn{
+    margin-right: 10px;
+    border-radius: 5px;
+    height: 40px;
+}
 
 .newsletter h1 {
     color: #454545;

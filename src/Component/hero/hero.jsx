@@ -3,20 +3,20 @@ import React from 'react'
 import './hero.css'
 import heroHandIcon from '../Assests/hand_icon.png'
 import arrowIcon from '../Assests/arrow.png'
-import heroImage from '../Assests/hero_image.png'
+import heroImage from '../Assests/dashcam1.jpg'
 
 const Hero = () => {
   return (
     <div className="hero">
       <div className="hero-left">
-        <h2>New Arrivals Only</h2>
+        <h2>New Arrival Cameras</h2>
         <div className="hero-title">
           <div className="hero-hand-icon">
             <p>New</p>
             <img src={heroHandIcon} alt="Hand icon" />
           </div>
           <p>Collections</p>
-          <p>For everyone</p>
+          <p>For Every Vehicle</p>
         </div>
         <div className="hero-latest-btn">
           <p>Latest Collection</p>
