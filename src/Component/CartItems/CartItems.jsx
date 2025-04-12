@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import "./CartItems.css";
 import remove_icon from "../Assests/cart_cross_icon.png";
 import { ShopContext } from "../../Context/ShopContext";
@@ -7,6 +7,28 @@ import { Link } from 'react-router-dom';
 const CartItems = () => {
   const { getTotalCartAmount, all_product, cartItems, removeFromCart, addToCart, decreaseCartQuantity } =
     useContext(ShopContext);
+
+  const [promoCode, setPromoCode] = useState("");
+  const [discountApplied, setDiscountApplied] = useState(false);
+  const [discountAmount, setDiscountAmount] = useState(0);
+
+  const handlePromoSubmit = () => {
+    const total = getTotalCartAmount();
+    if (promoCode.toLowerCase() === "react" && !discountApplied) {
+      const discount = total * 0.10;
+      setDiscountAmount(discount);
+      setDiscountApplied(true);
+      alert("Promo code applied! 10% discount");
+    } else if (discountApplied) {
+      alert("Promo code already applied.");
+    } else {
+      alert("Invalid promo code.");
+    }
+  };
+
+  const rawTotal = getTotalCartAmount();
+const finalAmount = Math.max(0, rawTotal - discountAmount); // 💡 never below 0
+
 
   return (
     <div className="cartitems">
@@ -57,8 +79,14 @@ const CartItems = () => {
           <div className="check">
             <div className="cartitems-total-item">
               <p>Subtotal</p>
-              <p>${getTotalCartAmount()}</p>
+              <p>${getTotalCartAmount().toFixed(2)}</p>
             </div>
+            {discountApplied && (
+              <div className="cartitems-total-item">
+                <p>Discount (10%)</p>
+                <p>-${discountAmount.toFixed(2)}</p>
+              </div>
+            )}
             <hr />
             <div className="cartitems-total-item">
               <p>Shipping Fee</p>
@@ -66,21 +94,35 @@ const CartItems = () => {
             </div>
 
             <hr />
-
             <div className="cartitems-total-item">
               <h3>Total</h3>
-              <h3>${getTotalCartAmount()}</h3>
+              <h3>${finalAmount.toFixed(2)}</h3>
             </div>
-            <button className="proceed">
-              <Link to="/checkout">Proceed to checkout</Link>
-            </button>
+            <button
+  className="proceed"
+  disabled={finalAmount <= 0}
+  style={{
+    backgroundColor: finalAmount <= 0 ? '#ccc' : '#4CAF50',
+    cursor: finalAmount <= 0 ? 'not-allowed' : 'pointer'
+  }}
+>
+  <Link to="/checkout" style={{ pointerEvents: finalAmount <= 0 ? 'none' : 'auto', color: 'white', textDecoration: 'none' }}>
+    Proceed to checkout
+  </Link>
+</button>
+
           </div>
         </div>
         <div className="cartitems-promocode">
           <p>If you have a promocode, enter it here</p>
           <div>
-            <input type="text" placeholder="Promo code" />
-            <button>Submit</button>
+            <input
+              type="text"
+              placeholder="Promo code"
+              value={promoCode}
+              onChange={(e) => setPromoCode(e.target.value)}
+            />
+            <button onClick={handlePromoSubmit}>Submit</button>
           </div>
         </div>
       </div>

@@ -15,6 +15,8 @@ const Checkout = () => {
     cvv: '',
   });
 
+  const [paymentMethod, setPaymentMethod] = useState('card'); // 'card' or 'cod'
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prevState => ({
@@ -25,9 +27,30 @@ const Checkout = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you would typically send the form data to your backend or payment processor
-    console.log('Form submitted:', formData);
-    // Reset form or redirect to confirmation page
+
+    // Simulate order placement
+    console.log('Order submitted:', { ...formData, paymentMethod });
+
+    if (paymentMethod === 'cod') {
+      alert("Order placed successfully with Cash on Delivery!");
+    } else {
+      alert("Order placed successfully with Card Payment!");
+    }
+
+    // Reset form or redirect to a thank you page
+    setFormData({
+      firstName: '',
+      lastName: '',
+      email: '',
+      address: '',
+      city: '',
+      postalCode: '',
+      country: '',
+      cardNumber: '',
+      expiryDate: '',
+      cvv: '',
+    });
+    setPaymentMethod('card');
   };
 
   return (
@@ -95,32 +118,58 @@ const Checkout = () => {
         </div>
 
         <div className="form-section">
-          <h3>Payment Details</h3>
-          <input
-            type="text"
-            name="cardNumber"
-            value={formData.cardNumber}
-            onChange={handleChange}
-            placeholder="Card Number"
-            required
-          />
-          <input
-            type="text"
-            name="expiryDate"
-            value={formData.expiryDate}
-            onChange={handleChange}
-            placeholder="MM/YY"
-            required
-          />
-          <input
-            type="text"
-            name="cvv"
-            value={formData.cvv}
-            onChange={handleChange}
-            placeholder="CVV"
-            required
-          />
+          <h3>Payment Method</h3>
+          <label>
+            <input
+              type="radio"
+              name="paymentMethod"
+              value="card"
+              checked={paymentMethod === 'card'}
+              onChange={(e) => setPaymentMethod(e.target.value)}
+            />
+            Credit/Debit Card
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="paymentMethod"
+              value="cod"
+              checked={paymentMethod === 'cod'}
+              onChange={(e) => setPaymentMethod(e.target.value)}
+            />
+            Cash on Delivery
+          </label>
         </div>
+
+        {paymentMethod === 'card' && (
+          <div className="form-section">
+            <h3>Card Details</h3>
+            <input
+              type="text"
+              name="cardNumber"
+              value={formData.cardNumber}
+              onChange={handleChange}
+              placeholder="Card Number"
+              required
+            />
+            <input
+              type="text"
+              name="expiryDate"
+              value={formData.expiryDate}
+              onChange={handleChange}
+              placeholder="MM/YY"
+              required
+            />
+            <input
+              type="text"
+              name="cvv"
+              value={formData.cvv}
+              onChange={handleChange}
+              placeholder="CVV"
+              required
+            />
+          </div>
+        )}
 
         <button type="submit" className="submit-button">Place Order</button>
       </form>

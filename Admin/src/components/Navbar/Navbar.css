@@ -10,8 +10,11 @@
 
 /* Ensure logo and profile images scale properly */
 .nav-logo {
-          width: 200px;
+          width: 120px;
           max-width: 100%;
+          border-radius: 15px;
+          padding-left: 0px;
+          height: 100px;
 }
 
 .nav-profile {

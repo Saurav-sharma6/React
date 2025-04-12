@@ -44,14 +44,14 @@ const ProductDisplay = (props) => {
           {product.description}
           </div>
           <div className="productdisplay-right-size">
-            <h1>Select Size</h1>
-            <div className="productdisplay-right-sizes">
+            {/* <h1>Select Size</h1> */}
+            {/* <div className="productdisplay-right-sizes">
               <div>S</div>
               <div>M</div>
               <div>L</div>
               <div>XL</div>
               <div>XXL</div>
-            </div>
+            </div> */}
           </div>
 
         {/* </div> */}

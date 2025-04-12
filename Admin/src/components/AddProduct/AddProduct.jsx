@@ -164,9 +164,13 @@ const AddProduct = () => {
             name="category" 
             className='add-product-selector'
           >
-            <option value="women">Women</option>
-            <option value="men">Men</option>
-            <option value="kid">Kid</option>
+            <option value="">Select</option>
+            <option value="women">Budget</option>
+            <option value="men">Premium</option>
+            <option value="kid">Night Vision</option>
+            <option value="">Vipers</option>
+            <option value="">Mats</option>
+            <option value="">Side Mirror</option>
           </select>
         </div>
 

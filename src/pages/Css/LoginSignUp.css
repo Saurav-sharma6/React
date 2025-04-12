@@ -65,12 +65,17 @@
 
 .loginsignup-agree {
     display: flex;
-    align-items: center;
     margin-top: 25px;
-    gap: 10px;
-    color: #5c5c5c;
-    font-size: 14px;
+    gap: 50px;
+    color: #231f1f;
+    font-size: 15px;
     font-weight: 500;
+    padding-left: 0px;
+    width: auto;
+}
+
+.loginsignup-agree input{
+    max-width: 100px;
 }
 
 @media (max-width: 768px) {
@@ -97,6 +102,25 @@
         font-size: 14px;
     }
 }
+
+.loginsignup-container {
+    /* existing styles */
+    margin: 60px auto; /* centers vertically with a little spacing */
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1); /* subtle shadow */
+    border-radius: 8px;
+}
+
+.loginsignup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginsignup-agree{
+
+}
+
+
 
 @media (max-width: 480px) {
     .loginsignup-container h1 {

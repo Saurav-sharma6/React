@@ -19,9 +19,26 @@ const ShopContextProvider = (props) =>{
         setCartItems((prev)=>({...prev,[itemId]:prev[itemId]+1}))
     }
 
-    const removeFromCart=(itemId)=>{
-        setCartItems((prev)=>({...prev,[itemId]:prev[itemId]-1}))
-    }
+    const removeFromCart = (itemId) => {
+        setCartItems((prev) => {
+          const updatedCart = { ...prev };
+          updatedCart[itemId] = 0; 
+          return updatedCart;
+        });
+      };
+      
+
+    const decreaseCartQuantity = (itemId) => {
+        setCartItems((prev) => {
+          if (prev[itemId] > 1) {
+            return { ...prev, [itemId]: prev[itemId] - 1 };
+          } else {
+            
+            return { ...prev, [itemId]: 0 };
+          }
+        });
+      };
+      
     console.log(cartItems);
 
     const getTotalCartItems=()=>{
@@ -46,7 +63,7 @@ const ShopContextProvider = (props) =>{
         return totalAmount;
     }
     
-    const contextValue = {getTotalCartItems,getTotalCartAmount,all_product,cartItems,addToCart,removeFromCart};
+    const contextValue = {getTotalCartItems,getTotalCartAmount,all_product,cartItems,addToCart,removeFromCart,decreaseCartQuantity};
 
 
     return(
