@@ -1,11 +1,11 @@
 // Hero.jsx
-import React from 'react'
-import './hero.css'
-import heroHandIcon from '../Assests/hand_icon.png'
-import arrowIcon from '../Assests/arrow.png'
-import heroImage from '../Assests/dashcam1.jpg'
+import React from 'react';
+import './hero.css';
+import heroHandIcon from '../Assests/hand_icon.png';
+import arrowIcon from '../Assests/arrow.png';
+import heroImage from '../Assests/dashcam1.jpg';
 
-const Hero = () => {
+const Hero = ({ scrollToCollection }) => {
   return (
     <div className="hero">
       <div className="hero-left">
@@ -18,7 +18,7 @@ const Hero = () => {
           <p>Collections</p>
           <p>For Every Vehicle</p>
         </div>
-        <div className="hero-latest-btn">
+        <div className="hero-latest-btn" onClick={scrollToCollection}>
           <p>Latest Collection</p>
           <img src={arrowIcon} alt="Arrow icon" />
         </div>
@@ -27,7 +27,7 @@ const Hero = () => {
         <img src={heroImage} alt="Hero" />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

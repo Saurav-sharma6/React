@@ -80,6 +80,46 @@ const Product = mongoose.model("Product", {
   },
 });
 
+const Subscriber = mongoose.model("Subscriber", {
+  email: {
+    type: String,
+    required: true,
+    unique: true
+  },
+  subscribedAt: {
+    type: Date,
+    default: Date.now
+  }
+});
+
+//Endpoint for the Emails
+
+app.post("/subscribe", async (req, res) => {
+  const { email } = req.body;
+
+  if (!email) {
+    return res.status(400).json({ success: false, error: "Email is required" });
+  }
+
+  try {
+    // Check for existing subscription
+    const existing = await Subscriber.findOne({ email });
+    if (existing) {
+      return res.status(409).json({ success: false, error: "Already subscribed" });
+    }
+
+    // Save to DB
+    const newSubscriber = new Subscriber({ email });
+    await newSubscriber.save();
+
+    res.json({ success: true, message: "Subscribed successfully!" });
+  } catch (err) {
+    console.error("Subscription Error:", err);
+    res.status(500).json({ success: false, error: "Internal server error" });
+  }
+});
+
+
 // Multer Storage Config
 const storage = multer.diskStorage({
   destination: './upload/images',

@@ -25,20 +25,24 @@ const Navbar = () => {
                         {menu === 'shop' && <hr />}
                     </li>
                     <li onClick={() => setMenu('mens')}>
-                        <Link style={{ textDecoration: 'none' }} to='/mens'>Budget</Link>
+                        <Link style={{ textDecoration: 'none' }} to='/budget'>Budget</Link>
                         {menu === 'mens' && <hr />}
                     </li>
                     <li onClick={() => setMenu('womens')}>
-                        <Link style={{ textDecoration: 'none' }} to='/womens'>Premium</Link>
+                        <Link style={{ textDecoration: 'none' }} to='/premium'>Premium</Link>
                         {menu === 'womens' && <hr />}
                     </li>
                     <li onClick={() => setMenu('kids')}>
-                        <Link style={{ textDecoration: 'none' }} to='/kids'>NightVision</Link>
+                        <Link style={{ textDecoration: 'none' }} to='/Nightvision'>NightVision</Link>
                         {menu === 'kids' && <hr />}
                     </li>
                     <li onClick={() => setMenu('About')}>
                         <Link style={{ textDecoration: 'none' }} to='/About'>About</Link>
                         {menu === 'About' && <hr />}
+                    </li>
+                    <li onClick={() => setMenu('Contact Us')}>
+                        <Link style={{ textDecoration: 'none' }} to='/contact'>Contact Us</Link>
+                       
                     </li>
                 </ul>
 

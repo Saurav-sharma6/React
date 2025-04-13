@@ -12,6 +12,7 @@ import Women_banner from './Component/Assests/banner_women.png'
 import kid_banner from './Component/Assests/banner_kids.png'
 import About from './Component/About/About';
 import Checkout from './Component/Checkout/checkout';
+import ContactUs from './Component/Contactus/ContactUs';
 
 
 function App() {
@@ -21,9 +22,10 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path='/'  element={<Shop/>}/>
-        <Route path='/mens'  element={<ShopCategory banner={men_banner}  category = "men"/>}/>
-        <Route path='/womens'  element={<ShopCategory  banner={Women_banner} category = "women"/>}/>
-        <Route path='/kids'  element={<ShopCategory banner={kid_banner} category = "kid"/>}/>
+        <Route path='/budget'  element={<ShopCategory   category = "men"/>}/>
+        <Route path='/premium'  element={<ShopCategory   category = "women"/>}/>
+        <Route path='/Nightvision'  element={<ShopCategory  category = "kid"/>}/>
+        <Route path='/contact'  element={<ContactUs/>}/>
         <Route path='/product' element={<Product/>}>
           <Route path=':productId' element={<Product/>}/>
         </Route>

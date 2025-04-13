@@ -1,9 +1,8 @@
-// NewCollections.jsx
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, forwardRef } from "react";
 import "./newcollections.css";
 import Item from "../Item/item";
 
-const NewCollections = () => {
+const NewCollections = forwardRef((props, ref) => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -21,7 +20,7 @@ const NewCollections = () => {
   }, []);
 
   return (
-    <div className="new-collections">
+    <div ref={ref} className="new-collections">
       <h1>New Collections</h1>
       <hr />
       <div className="collections">
@@ -30,7 +29,7 @@ const NewCollections = () => {
             key={i}
             id={item.id}
             name={item.name}
-            image={item.image}  // image is a URL
+            image={item.image}
             new_price={item.new_price}
             old_price={item.old_price}
           />
@@ -38,6 +37,6 @@ const NewCollections = () => {
       </div>
     </div>
   );
-};
+});
 
 export default NewCollections;

@@ -43,6 +43,27 @@
     cursor: pointer;
 }
 
+.shopcategory-searchbar {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .shopcategory-searchbar input {
+    width: 40%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .shopcategory-noresult {
+    text-align: center;
+    color: gray;
+    font-style: italic;
+    margin-top: 20px;
+  }
+  
+
 @media (max-width: 768px) {
     .shopcategory-indexSort {
         flex-direction: column;
